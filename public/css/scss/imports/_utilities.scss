@@ -1,0 +1,39 @@
+
+// CLEARFIX: http://nicolasgallagher.com/micro-clearfix-hack/
+//  -------------------------
+%clearfix:before,
+%clearfix:after {
+    content: "";
+    display: table;
+}
+
+%clearfix:after {
+    clear: both;
+}
+
+%clearfix {
+    *zoom: 1;
+}
+
+
+// MediaQueries mixins
+// ---------------------------------------------------------------------------
+@mixin mq-at-least($device-width) {
+  @media screen and (min-width: $device-width) {
+    @content;
+  }
+}
+
+@mixin mq-until($device-width) {
+  @media screen and (max-width: $device-width - 1) {
+    @content;
+  }
+}
+// @include mq("all and (min-width:33em)") {
+//  ...
+// }
+@mixin mq($query: nil) {
+  @media #{$query} {
+    @content;
+  }
+}

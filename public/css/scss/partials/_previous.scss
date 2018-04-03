@@ -1,0 +1,146 @@
+// OLD CSS imports
+// ---------------------------------------------------------------------------
+body, p, h1, h2, h3, span, div, td, table, li, ul {
+    font-family: 'Oswald', sans-serif;
+    color: #e1e1e1;
+    font-weight: 300;
+}
+body {
+    background-color: #363636;
+    margin: 0;
+}
+h1, h2, h3 {
+    font-weight: 300;
+    letter-spacing: 4px;
+}
+h1.header {
+    font-size: 40px;
+    margin: 0 0 15px;
+    padding-bottom: 0;
+}
+.header span {
+    background: #F96;
+    padding: 1px 10px;
+    color: #363636;
+}
+ul.mainNav {
+    padding: 0;
+    margin: 0;
+}
+ul.mainNav li {
+    margin: 0;
+    padding: 0 0 6px 0;
+    width: 400px;
+    display: block;
+    text-align: right;
+}
+ul.subNav li {
+    display: block;
+    float: left;
+    margin-right: 10px;
+    text-align: left;
+    width: 40px;
+}
+ul.subNav li a, ul.subNav li a img {
+    outline: none;
+    border: none;
+}
+ul.mainNav li a {
+    letter-spacing: 2px;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 24px;
+    text-decoration: none;
+    display: block;
+    padding-right: 5px;
+    color: #e1e1e1;
+    outline: none;
+}
+ul.mainNav li a:hover {
+    background: #00CCCC;
+    color: #363636;
+    cursor: pointer;
+    outline: none;
+}
+a, img, a img, {
+    outline: none!important;
+    border: none!important;
+}
+ul.mainNav {
+    list-style: none;
+    outline: none;
+}
+div.copyright {
+    color: #999;
+    font-size: 9px;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+body.background {
+    background: url('../img/bg.jpg') center top no-repeat #1a1a1a;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+div.topNav {
+    width: 500px;
+    float: right;
+    padding-top: 25px;
+}
+.clr {
+    clear: both;
+}
+div.topNav ul li {
+    list-style: none;
+    float: left;
+    margin: 0 15px;
+    outline: none;
+    border: none;
+}
+div.topNav ul li a {
+    text-decoration: none;
+    padding: 10px 15px;
+    letter-spacing: 2px;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 24px;
+    border-bottom: 5px solid #999;
+    outline: none;
+}
+div.topNav ul li a:hover {
+    text-decoration: none;
+    padding: 10px 15px;
+    border-bottom: 5px solid #d5e00d;
+    color: #FFF;
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    line-height: 24px;
+    outline: none;
+}
+div.bioBox {
+    display: none;
+}
+.icons a {
+    float: left;
+    margin: 0 10px;
+    border: none;
+    outline: none;
+}
+.icons a:active, .icons a:hover, .icons a:visited {
+    float: left;
+    margin: 0 10px;
+    border: none;
+    outline: none;
+}
+.icons a img {
+    border: none;
+    outline: none;
+}
+.icons a:active img {
+    border: none;
+    outline: none;
+}

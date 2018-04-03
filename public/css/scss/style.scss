@@ -1,0 +1,39 @@
+// Styles.scss
+
+@charset "utf-8";
+
+// GLOBAL imports
+// ---------------------------------------------------------------------------
+
+@import "compass";
+
+// PRIMARY imports
+// ---------------------------------------------------------------------------
+
+@import "imports/normalize";
+@import "imports/grids";
+@import "imports/utilities";
+@import "imports/plugins";
+@import "imports/mixins";
+
+// MEDIA-QUERIES imports
+// ---------------------------------------------------------------------------
+
+// SITE-SPECIFIC imports
+// ---------------------------------------------------------------------------
+
+
+// SITE STRUCTURE
+// ---------------------------------------------------------------------------
+
+
+// @import "partials/previous";
+@import "partials/fonts";
+@import "partials/vars";
+@import "partials/header";
+@import "partials/page";
+@import "partials/portfolio";
+@import "partials/footer";
+
+// //Print: default print
+// @import "partials/modules/print";

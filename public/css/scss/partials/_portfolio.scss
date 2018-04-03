@@ -1,0 +1,96 @@
+// # PORTFOLIO
+// - - - - - - - - - - - - - -
+.portfolio {
+    padding: 1em 0;
+    article {
+        padding: 0 0 1em;
+        @extend %clearfix;
+        h2 {
+            text-align: left;
+            border-bottom: 1px solid $maxxOrange;
+            padding: 5px 0.25em 5px 0.5em;
+            text-transform: uppercase;
+            font-family: $oswald;
+            font-weight: 300;
+            letter-spacing: 2px;
+            margin: 0 0 0.5em;
+            float: left;
+            width: 100%;
+            @include transition(all 0.3s ease-in);
+            cursor: pointer;
+            @extend %clearfix;
+            &:hover {
+                background: $maxxOrange;
+                color: $maxxGray;
+            }
+            &.active {
+                background: $maxxTeal;
+                color: white;
+                border-color: $maxxTeal;
+            }
+            a {
+                float: right;
+                color: white;
+
+                @include transition(transform 0.3s ease-in);
+                &.rotate {
+                    @include rotate(45deg);
+                }
+            }
+            span {
+                float: left;
+            }
+            @media all and (min-width: 760px) {
+                display: inline-block;
+                border-bottom: none;
+                margin: 0 0 0 0;
+                padding: 0;
+                width: 170px;
+                span {
+                    display: block;
+                    padding: 5px 0.5em 5px 0.5em;
+                    // border-bottom: 1px solid $maxxOrange;
+                }
+                &:hover {
+                    background: $maxxTeal;
+                }
+                a {
+                    display: none;
+                }
+            }
+            @media all and (min-width: 900px) {
+                width: 280px;
+                text-align: right;
+            }
+        }
+        figure {
+            @extend %clearfix;
+            display: none;
+            margin: 0.5em 0.5em 0 0;
+            float: left;
+            @media all and (min-width: 760px) {
+                margin: 0 0 0 0.5em;
+            }
+            a {
+                img {
+                    max-width: 40px;
+                    display: block;
+                }
+            }
+        }
+        // &.active-section {
+        //     figure {
+        //         @media all and (min-width: 760px) {
+        //             display: inline-block;
+        //         }
+        //     }
+        // }
+    }
+    @media all and (min-width: 760px) {
+        padding: 0;
+        min-height: 375px;
+    }
+    @media all and (min-width: 900px) {
+        min-height: 300px;
+    }
+}

@@ -1,0 +1,39 @@
+// # MIXINS
+// - - - - - - - - - - - - - -
+@mixin randomClassGenerator($gif, $background, $color) {
+    // .gif-#{$num} {
+    background: url('../img/#{$gif}.gif') center top repeat #1a1a1a;
+    header {
+        h1 {
+            span {
+                background: $color;
+            }
+        }
+    }
+    .about {
+        border-color: $color;
+    }
+    footer {
+        ul.social {
+            li {
+                a {
+                    outline-color: $color;
+                    color: $color;
+                    &:hover {
+                        background-color: $color;
+                    }
+                }
+            }
+        }
+    }
+    .portfolio {
+        ƒ article {
+            h2 {
+                border-color: $color;
+            }
+        }
+    }
+    .background {
+        background: url('../img/#{$background}.png') repeat;
+    }
+}

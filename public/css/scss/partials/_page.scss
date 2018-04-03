@@ -1,0 +1,98 @@
+// # PAGE
+// - - - - - - - - - - - - - -
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+%wrapper {
+    max-width: 960px;
+    margin: auto;
+}
+body {
+    font-family: $roboto;
+    font-weight: 400;
+    font-size: 16px;
+    color: #e1e1e1;
+    background: url('../img/bg.jpg') center top no-repeat #1a1a1a;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0;
+    // &.gif-2 {
+    //     background: url('../img/giphy-2.gif') center top repeat #1a1a1a;
+    // }
+    background-attachment: fixed;
+    @media all and (min-width: 760px) {
+        background-attachment: none;
+    }
+
+}
+
+.gif-1 {
+    @include randomClassGenerator(gif-pizza, bg-fade-pink, #FDF389);
+}
+
+.gif-2 {
+    @include randomClassGenerator(gif-static, bg-fade, #f043cc);
+}
+
+.gif-3 {
+    @include randomClassGenerator(gif-sammy, bg-fade, #9be489);
+}
+
+// .gif-4 {
+//     @include randomClassGenerator(gif-pink, bg-fade-white, #4477ff);
+// }
+
+.gif-4 {
+    @include randomClassGenerator(gif-whack, bg-fade, #ffd562);
+}
+
+.gif-5 {
+    @include randomClassGenerator(gif-skel, bg-fade, #95424b);
+}
+
+.gif-6 {
+    @include randomClassGenerator(gif-tron, bg-fade, #b6dddb);
+}
+
+
+
+.container {
+    @extend %wrapper;
+    padding: 1em;
+    @media all and (min-width: 760px) {
+        padding: 0 1em 1em;
+    }
+}
+.background {
+    background: url('../img/bg-fade.png') repeat;
+    padding: 1em;
+    @media all and (min-width: 760px) {
+        padding: 2em 2em 0;
+    }
+}
+// About Section
+.about {
+    border-top: 1px solid $maxxOrange;
+    padding: 0 1em;
+    p {
+        color: white;
+        font-weight: 200;
+        line-height: 1.5em;
+    }
+    @media all and (min-width: 760px) {
+        // display: none;
+    }
+}
+main {
+    @extend %wrapper;
+}

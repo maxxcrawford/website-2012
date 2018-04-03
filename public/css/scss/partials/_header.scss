@@ -1,0 +1,70 @@
+// # HEADER
+// - - - - - - - - - - - - - -
+header {
+    @extend %wrapper;
+    @extend %clearfix;
+    text-align: center;
+    @media all and (min-width: 760px) {
+        text-align: left;
+    }
+    nav {
+        display: none;
+        @media all and (min-width: 760px) {
+            display: block;
+            float: right;
+        }
+        ul {
+            margin: 0;
+            list-style: none;
+            li {
+                display: inline-block;
+                a {
+                    display: block;
+                    font-family: oswald;
+                    text-transform: uppercase;
+                    background: $maxxTeal;
+                    color: white;
+                    padding: 0 0.75em;
+                    height: 49px;
+                    line-height: 49px;
+                    font-size: 1.25em;
+                    margin: 0 0 0 0.5em;
+                    text-decoration: none;
+                    outline: none;
+                    letter-spacing: 1px;
+                    font-weight: 300;
+                    @include transition(background 0.3s ease-in);
+                    &:hover {
+                        background: darken($maxxTeal, 10%);
+                    }
+                    @media all and (min-width: 900px) {
+                        letter-spacing: 2px;
+                        padding: 0 1em;
+                        height: 49px;
+                        line-height: 49px;
+                        font-size: 1.5em;
+                    }
+                }
+            }
+        }
+    }
+    .logo {
+        font-family: $oswald;
+        font-size: 2em;
+        margin: 0.5em 0 1em;
+        padding-bottom: 0;
+        letter-spacing: 3px;
+        font-weight: 300;
+        text-transform: uppercase;
+        span {
+            background: $maxxOrange;
+            padding: 1px 10px;
+            color: $maxxGray;
+        }
+        @media all and (min-width: 760px) {
+            float: left;
+            margin: 0 0 1em;
+            padding-top: 3px;
+        }
+    }
+}
