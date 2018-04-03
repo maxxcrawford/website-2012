@@ -1,43 +1,6 @@
-$(document).ready(function () {
-  $('#toggle1').click(function () {
-    $('.target1').toggle('slow', function () {});
-  });
-  $('#toggle2').click(function () {
-    $('.target2').toggle('slow', function () {});
-  });
-  $('#toggle3').click(function () {
-    $('.target3').toggle('slow', function () {});
-  });
-  $('#toggle4').click(function () {
-    $('.target4').toggle('slow', function () {});
-  });
-  $('#bioShow').click(function () {
-    $('.bioBox').toggle('slow', function () {});
-  });
-    // $(".fancybox").fancybox({
-    //     'titlePosition': 'inside'
-    // });
-    // $("#iframe").fancybox({
-    //     'width': '310px',
-    //     //'height':         '700px',
-    //     'autoDimensions': false,
-    //     'autoScale': false,
-    //     //'transitionIn':   'none',
-    //     //'transitionOut':  'none',
-    //     'type': 'iframe'
-    // });
-    // $("#social").fancybox({
-    //     'width': '505px',
-    //     //'height':         '150px',
-    //     'autoDimensions': false,
-    //     'autoScale': false,
-    //     //'transitionIn':   'none',
-    //     //'transitionOut':  'none',
-    //     'type': 'iframe'
-    // });
-});
+(function ($) {
+  'use strict';
 
-$(document).ready(function () {
   var $portfolioToggle = $('.portfolio article h2');
 
   function portfolioToggle (activeItem) {
@@ -79,11 +42,11 @@ $(document).ready(function () {
 
   $('.gallery-section').each(function () { // the containers for all your galleries
     $(this).find('figure a').not('.external').magnificPopup({
-            // delegate: 'a', // the selector for gallery item
+              // delegate: 'a', // the selector for gallery item
       type: 'image',
       gallery: {
         enabled: true
       }
     });
   });
-});
+})(jQuery);
